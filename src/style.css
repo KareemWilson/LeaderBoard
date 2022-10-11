@@ -1,0 +1,38 @@
+.d-flex{
+    display: flex;
+}
+
+.f-row{
+    flex-direction: row;
+}
+.f-col{
+    flex-direction: column;
+}
+
+.content-container{
+    justify-content: space-around;
+}
+
+.form {
+    align-items: end;
+    gap: 18px;
+}
+
+.form-title{
+    align-self: flex-start;
+}
+
+.table-head {
+    justify-content: space-between !important;
+    width: 291px;
+}
+
+.table-refresh{
+    max-height: 20px;
+    align-self: center;
+}
+.table-items {
+    border: 2px solid;
+    padding: 5px 10px;
+    justify-content: space-between;
+}

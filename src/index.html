@@ -7,6 +7,26 @@
     <title>Leader Board</title>
 </head>
 <body>
-    <h1 class="title">LeaderBoard</h1>
+    <div class="container">
+        <h1 class="title">LeaderBoard</h1>
+        <div class="content-container d-flex f-row">
+            <div class="table">
+                <div class="table-head d-flex f-row">
+                    <p class="table-title">Recent Scores</p>
+                    <button class="table-refresh">Refresh</button>
+                </div>
+                <div class="table-items d-flex f-row">
+                    <p class="name">name</p>
+                    <p class="score">score</p>
+                </div>
+            </div>
+            <div class="form d-flex f-col">
+                <p class="form-title">Add your Score</p>
+                <input type="text" id="name-input" placeholder="your name">
+                <input type="text" id="score-input" placeholder="your score">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
