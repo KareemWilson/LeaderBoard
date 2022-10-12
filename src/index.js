@@ -4,7 +4,7 @@ import { createGame, addScore, getAllScores } from "./Services/API";
 const nameInput = document.querySelector("#name-input");
 const scoreInput = document.querySelector("#score-input");
 const submitBtn = document.querySelector(".submit");
-const refreshBtn = document.querySelector('.table-refresh');
+const refreshBtn = document.querySelector(".table-refresh");
 
 submitBtn.addEventListener("click", () => {
   if (nameInput.value != "" && scoreInput.value != "") {
@@ -14,10 +14,9 @@ submitBtn.addEventListener("click", () => {
   }
 });
 
-refreshBtn.addEventListener('click', () => {
-    const varial = getAllScores()
-    console.log(varial);
-})
+refreshBtn.addEventListener("click", async () => {
+  getAllScores();
+});
 
 // createGame();
 
