@@ -34,16 +34,14 @@ const getAllScores = async () => {
   table.innerHTML = '';
   await fetch(scoresURL)
     .then((response) => response.json())
-    .then((json) =>
-    json.result.forEach((element) => {
-        const scoresHTML = `
+    .then((json) => json.result.forEach((element) => {
+      const scoresHTML = `
       <div class='element d-flex f-row'>
       <p class='name'>${element.user}</p>
       <p class='score'>${element.score}</p>
       </div>`;
-        table.innerHTML += scoresHTML;
-      })
-    );
+      table.innerHTML += scoresHTML;
+    }));
 };
 
 module.exports = { createGame, addScore, getAllScores };
