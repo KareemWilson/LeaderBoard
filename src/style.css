@@ -14,6 +14,10 @@
   justify-content: space-around;
 }
 
+.table {
+
+}
+
 .form {
   align-items: end;
   gap: 18px;
@@ -21,6 +25,9 @@
 
 .form-title {
   align-self: flex-start;
+  font-weight: bold;
+  font-size: 28px;
+  color: #7fc07f;
 }
 
 .table-head {
@@ -35,10 +42,27 @@
 
 .table-items {
   border: 2px solid;
+  border-radius: 10px;
   padding: 5px 10px;
   justify-content: space-between;
 }
 
 .element {
   justify-content: space-between;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  background-color: #42a242;
+  border: none;
+  height: 27px;
+  border-radius: 15px;
+  transition: 2s;
+}
+
+.btn:hover {
+  background-color: #7fc07f;
+  width: 60px;
 }
