@@ -12,15 +12,22 @@
 
 .content-container {
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .form {
   align-items: end;
   gap: 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .form-title {
   align-self: flex-start;
+  font-weight: bold;
+  font-size: 28px;
+  color: #7fc07f;
 }
 
 .table-head {
@@ -35,10 +42,33 @@
 
 .table-items {
   border: 2px solid;
+  border-radius: 10px;
   padding: 5px 10px;
   justify-content: space-between;
 }
 
 .element {
   justify-content: space-between;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  background-color: #42a242;
+  border: none;
+  height: 27px;
+  border-radius: 15px;
+  transition: 2s;
+}
+
+.btn:hover {
+  background-color: #7fc07f;
+  width: 60px;
+}
+
+input {
+  height: 32px;
+  box-shadow: rgb(50 50 93 / 25%) 0 2px 5px -1px, rgb(0 0 0 / 30%) 0 1px 3px -1px;
+  border: none;
 }
